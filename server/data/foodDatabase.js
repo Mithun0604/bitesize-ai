@@ -459,6 +459,289 @@ const foodDatabase = [
     commonCookingVariations: ["With lemon and chaat masala", "Olive oil dressing"]
   },
 
+  // Common single-ingredient foods. Nutrients are generic per-100g estimates;
+  // actual values change with variety, brand, cooking method, and added salt/oil.
+  {
+    id: "apple_raw", name: "Apple (Raw, with Skin)", category: "Fresh Produce",
+    standardServingGrams: 182, servingUnit: "1 medium apple (182g)",
+    per100g: { calories: 52, protein: 0.3, carbs: 13.8, fat: 0.2, fiber: 2.4, sugar: 10.4, sodium: 1 },
+    micronutrients: { iron_mg: 0.1, calcium_mg: 6, potassium_mg: 107 },
+    tags: ["fruit", "apple", "raw", "vegan", "vegetarian"], approxCostPerKg: 220,
+    commonCookingVariations: ["Raw", "Baked", "Stewed"]
+  },
+  {
+    id: "banana_raw", name: "Banana (Raw)", category: "Fresh Produce",
+    standardServingGrams: 118, servingUnit: "1 medium banana (118g)",
+    per100g: { calories: 89, protein: 1.1, carbs: 22.8, fat: 0.3, fiber: 2.6, sugar: 12.2, sodium: 1 },
+    micronutrients: { iron_mg: 0.3, calcium_mg: 5, potassium_mg: 358 },
+    tags: ["fruit", "banana", "raw", "robusta", "elaichi banana", "vegan", "vegetarian"], approxCostPerKg: 60,
+    commonCookingVariations: ["Raw", "Mashed", "Smoothie"]
+  },
+  {
+    id: "orange_raw", name: "Orange (Raw)", category: "Fresh Produce",
+    standardServingGrams: 131, servingUnit: "1 medium orange (131g)",
+    per100g: { calories: 47, protein: 0.9, carbs: 11.8, fat: 0.1, fiber: 2.4, sugar: 9.4, sodium: 0 },
+    micronutrients: { iron_mg: 0.1, calcium_mg: 40, potassium_mg: 181 },
+    tags: ["fruit", "orange", "citrus", "raw", "vegan", "vegetarian"], approxCostPerKg: 100,
+    commonCookingVariations: ["Raw", "Juiced"]
+  },
+  {
+    id: "mango_raw", name: "Mango (Raw, Ripe)", category: "Fresh Produce",
+    standardServingGrams: 165, servingUnit: "1 cup sliced (165g)",
+    per100g: { calories: 60, protein: 0.8, carbs: 15.0, fat: 0.4, fiber: 1.6, sugar: 13.7, sodium: 1 },
+    micronutrients: { iron_mg: 0.2, calcium_mg: 11, potassium_mg: 168 },
+    tags: ["fruit", "mango", "aam", "raw", "vegan", "vegetarian"], approxCostPerKg: 100,
+    commonCookingVariations: ["Sliced", "Smoothie", "Ripe"]
+  },
+  {
+    id: "papaya_raw", name: "Papaya (Raw, Ripe)", category: "Fresh Produce",
+    standardServingGrams: 145, servingUnit: "1 cup cubes (145g)",
+    per100g: { calories: 43, protein: 0.5, carbs: 10.8, fat: 0.3, fiber: 1.7, sugar: 7.8, sodium: 8 },
+    micronutrients: { iron_mg: 0.3, calcium_mg: 20, potassium_mg: 182 },
+    tags: ["fruit", "papaya", "papita", "raw", "vegan", "vegetarian"], approxCostPerKg: 50,
+    commonCookingVariations: ["Raw", "Fruit salad"]
+  },
+  {
+    id: "grapes_raw", name: "Grapes (Raw)", category: "Fresh Produce",
+    standardServingGrams: 92, servingUnit: "1 cup (92g)",
+    per100g: { calories: 69, protein: 0.7, carbs: 18.1, fat: 0.2, fiber: 0.9, sugar: 15.5, sodium: 2 },
+    micronutrients: { iron_mg: 0.4, calcium_mg: 10, potassium_mg: 191 },
+    tags: ["fruit", "grapes", "angoor", "raw", "vegan", "vegetarian"], approxCostPerKg: 160,
+    commonCookingVariations: ["Raw", "Frozen"]
+  },
+  {
+    id: "pineapple_raw", name: "Pineapple (Raw)", category: "Fresh Produce",
+    standardServingGrams: 165, servingUnit: "1 cup chunks (165g)",
+    per100g: { calories: 50, protein: 0.5, carbs: 13.1, fat: 0.1, fiber: 1.4, sugar: 9.9, sodium: 1 },
+    micronutrients: { iron_mg: 0.3, calcium_mg: 13, potassium_mg: 109 },
+    tags: ["fruit", "pineapple", "ananas", "raw", "vegan", "vegetarian"], approxCostPerKg: 90,
+    commonCookingVariations: ["Raw", "Grilled"]
+  },
+  {
+    id: "watermelon_raw", name: "Watermelon (Raw)", category: "Fresh Produce",
+    standardServingGrams: 152, servingUnit: "1 cup diced (152g)",
+    per100g: { calories: 30, protein: 0.6, carbs: 7.6, fat: 0.2, fiber: 0.4, sugar: 6.2, sodium: 1 },
+    micronutrients: { iron_mg: 0.2, calcium_mg: 7, potassium_mg: 112 },
+    tags: ["fruit", "watermelon", "tarbooz", "raw", "hydration", "vegan", "vegetarian"], approxCostPerKg: 35,
+    commonCookingVariations: ["Raw", "Chilled"]
+  },
+  {
+    id: "strawberries_raw", name: "Strawberries (Raw)", category: "Fresh Produce",
+    standardServingGrams: 152, servingUnit: "1 cup halves (152g)",
+    per100g: { calories: 32, protein: 0.7, carbs: 7.7, fat: 0.3, fiber: 2.0, sugar: 4.9, sodium: 1 },
+    micronutrients: { iron_mg: 0.4, calcium_mg: 16, potassium_mg: 153 },
+    tags: ["fruit", "strawberry", "berries", "raw", "vegan", "vegetarian"], approxCostPerKg: 450,
+    commonCookingVariations: ["Raw", "Frozen", "Smoothie"]
+  },
+  {
+    id: "avocado_raw", name: "Avocado (Raw)", category: "Fresh Produce",
+    standardServingGrams: 150, servingUnit: "1 cup sliced (150g)",
+    per100g: { calories: 160, protein: 2.0, carbs: 8.5, fat: 14.7, fiber: 6.7, sugar: 0.7, sodium: 7 },
+    micronutrients: { iron_mg: 0.6, calcium_mg: 12, potassium_mg: 485 },
+    tags: ["fruit", "avocado", "butter fruit", "raw", "vegan", "vegetarian"], approxCostPerKg: 700,
+    commonCookingVariations: ["Sliced", "Mashed", "Guacamole"]
+  },
+  {
+    id: "spinach_raw", name: "Spinach (Raw)", category: "Fresh Produce",
+    standardServingGrams: 30, servingUnit: "1 cup (30g)",
+    per100g: { calories: 23, protein: 2.9, carbs: 3.6, fat: 0.4, fiber: 2.2, sugar: 0.4, sodium: 79 },
+    micronutrients: { iron_mg: 2.7, calcium_mg: 99, potassium_mg: 558 },
+    tags: ["vegetable", "spinach", "palak", "raw", "vegan", "vegetarian", "high-fiber"], approxCostPerKg: 100,
+    commonCookingVariations: ["Raw", "Steamed", "Sautéed"]
+  },
+  {
+    id: "broccoli_raw", name: "Broccoli (Raw)", category: "Fresh Produce",
+    standardServingGrams: 91, servingUnit: "1 cup chopped (91g)",
+    per100g: { calories: 34, protein: 2.8, carbs: 6.6, fat: 0.4, fiber: 2.6, sugar: 1.7, sodium: 33 },
+    micronutrients: { iron_mg: 0.7, calcium_mg: 47, potassium_mg: 316 },
+    tags: ["vegetable", "broccoli", "raw", "vegan", "vegetarian", "high-fiber"], approxCostPerKg: 220,
+    commonCookingVariations: ["Raw", "Steamed", "Roasted"]
+  },
+  {
+    id: "tomato_raw", name: "Tomato (Raw)", category: "Fresh Produce",
+    standardServingGrams: 123, servingUnit: "1 medium tomato (123g)",
+    per100g: { calories: 18, protein: 0.9, carbs: 3.9, fat: 0.2, fiber: 1.2, sugar: 2.6, sodium: 5 },
+    micronutrients: { iron_mg: 0.3, calcium_mg: 10, potassium_mg: 237 },
+    tags: ["vegetable", "tomato", "tamatar", "raw", "vegan", "vegetarian"], approxCostPerKg: 40,
+    commonCookingVariations: ["Raw", "Cooked", "Pureed"]
+  },
+  {
+    id: "cucumber_raw", name: "Cucumber (Raw, with Peel)", category: "Fresh Produce",
+    standardServingGrams: 104, servingUnit: "1 cup sliced (104g)",
+    per100g: { calories: 15, protein: 0.7, carbs: 3.6, fat: 0.1, fiber: 0.5, sugar: 1.7, sodium: 2 },
+    micronutrients: { iron_mg: 0.3, calcium_mg: 16, potassium_mg: 147 },
+    tags: ["vegetable", "cucumber", "kheera", "raw", "vegan", "vegetarian", "hydration"], approxCostPerKg: 35,
+    commonCookingVariations: ["Raw", "Salad", "Raita"]
+  },
+  {
+    id: "carrot_raw", name: "Carrot (Raw)", category: "Fresh Produce",
+    standardServingGrams: 61, servingUnit: "1 medium carrot (61g)",
+    per100g: { calories: 41, protein: 0.9, carbs: 9.6, fat: 0.2, fiber: 2.8, sugar: 4.7, sodium: 69 },
+    micronutrients: { iron_mg: 0.3, calcium_mg: 33, potassium_mg: 320 },
+    tags: ["vegetable", "carrot", "gajar", "raw", "vegan", "vegetarian"], approxCostPerKg: 55,
+    commonCookingVariations: ["Raw", "Steamed", "Roasted"]
+  },
+  {
+    id: "potato_boiled", name: "Potato (Boiled, without Skin)", category: "Fresh Produce",
+    standardServingGrams: 156, servingUnit: "1 medium potato (156g)",
+    per100g: { calories: 87, protein: 1.9, carbs: 20.1, fat: 0.1, fiber: 1.8, sugar: 0.9, sodium: 4 },
+    micronutrients: { iron_mg: 0.3, calcium_mg: 5, potassium_mg: 379 },
+    tags: ["vegetable", "potato", "aloo", "boiled", "vegan", "vegetarian"], approxCostPerKg: 35,
+    commonCookingVariations: ["Boiled", "Mashed", "Roasted"]
+  },
+  {
+    id: "sweet_potato_baked", name: "Sweet Potato (Baked)", category: "Fresh Produce",
+    standardServingGrams: 130, servingUnit: "1 medium sweet potato (130g)",
+    per100g: { calories: 90, protein: 2.0, carbs: 20.7, fat: 0.2, fiber: 3.3, sugar: 6.5, sodium: 36 },
+    micronutrients: { iron_mg: 0.7, calcium_mg: 38, potassium_mg: 475 },
+    tags: ["vegetable", "sweet potato", "shakarkandi", "baked", "vegan", "vegetarian", "high-fiber"], approxCostPerKg: 65,
+    commonCookingVariations: ["Baked", "Boiled", "Roasted"]
+  },
+  {
+    id: "cauliflower_raw", name: "Cauliflower (Raw)", category: "Fresh Produce",
+    standardServingGrams: 100, servingUnit: "1 cup chopped (100g)",
+    per100g: { calories: 25, protein: 1.9, carbs: 5.0, fat: 0.3, fiber: 2.0, sugar: 1.9, sodium: 30 },
+    micronutrients: { iron_mg: 0.4, calcium_mg: 22, potassium_mg: 299 },
+    tags: ["vegetable", "cauliflower", "gobhi", "raw", "vegan", "vegetarian"], approxCostPerKg: 45,
+    commonCookingVariations: ["Raw", "Steamed", "Roasted"]
+  },
+  {
+    id: "green_peas_cooked", name: "Green Peas (Boiled)", category: "Fresh Produce",
+    standardServingGrams: 160, servingUnit: "1 cup (160g)",
+    per100g: { calories: 84, protein: 5.4, carbs: 15.6, fat: 0.2, fiber: 5.5, sugar: 5.9, sodium: 3 },
+    micronutrients: { iron_mg: 1.5, calcium_mg: 27, potassium_mg: 271 },
+    tags: ["vegetable", "peas", "matar", "boiled", "vegan", "vegetarian", "high-fiber"], approxCostPerKg: 100,
+    commonCookingVariations: ["Boiled", "Steamed", "Masala"]
+  },
+  {
+    id: "chickpeas_cooked", name: "Chickpeas (Boiled, Plain)", category: "Pulses & Legumes",
+    standardServingGrams: 164, servingUnit: "1 cup (164g)",
+    per100g: { calories: 164, protein: 8.9, carbs: 27.4, fat: 2.6, fiber: 7.6, sugar: 4.8, sodium: 7 },
+    micronutrients: { iron_mg: 2.9, calcium_mg: 49, potassium_mg: 291 },
+    tags: ["pulse", "legume", "chickpeas", "chana", "garbanzo", "boiled", "vegan", "vegetarian", "high-fiber"], approxCostPerKg: 120,
+    commonCookingVariations: ["Boiled", "Roasted", "Salad"]
+  },
+  {
+    id: "lentils_cooked", name: "Lentils (Boiled, Plain)", category: "Pulses & Legumes",
+    standardServingGrams: 198, servingUnit: "1 cup (198g)",
+    per100g: { calories: 116, protein: 9.0, carbs: 20.1, fat: 0.4, fiber: 7.9, sugar: 1.8, sodium: 2 },
+    micronutrients: { iron_mg: 3.3, calcium_mg: 19, potassium_mg: 369 },
+    tags: ["pulse", "lentil", "dal", "masoor", "boiled", "vegan", "vegetarian", "high-protein", "high-fiber"], approxCostPerKg: 150,
+    commonCookingVariations: ["Boiled", "Soup", "Curry"]
+  },
+  {
+    id: "black_beans_cooked", name: "Black Beans (Boiled, Plain)", category: "Pulses & Legumes",
+    standardServingGrams: 172, servingUnit: "1 cup (172g)",
+    per100g: { calories: 132, protein: 8.9, carbs: 23.7, fat: 0.5, fiber: 8.7, sugar: 0.3, sodium: 1 },
+    micronutrients: { iron_mg: 2.1, calcium_mg: 27, potassium_mg: 355 },
+    tags: ["pulse", "beans", "black beans", "boiled", "vegan", "vegetarian", "high-fiber"], approxCostPerKg: 260,
+    commonCookingVariations: ["Boiled", "Soup", "Burrito bowl"]
+  },
+  {
+    id: "whole_wheat_bread", name: "Whole Wheat Bread",
+    category: "Grains & Cereals", standardServingGrams: 28, servingUnit: "1 slice (28g)",
+    per100g: { calories: 247, protein: 13.0, carbs: 41.0, fat: 3.4, fiber: 7.0, sugar: 6.0, sodium: 400 },
+    micronutrients: { iron_mg: 2.5, calcium_mg: 107, potassium_mg: 230 },
+    tags: ["grain", "bread", "whole wheat", "atta bread", "vegetarian"], approxCostPerKg: 120,
+    commonCookingVariations: ["Fresh", "Toasted", "Sandwich"]
+  },
+  {
+    id: "corn_cooked", name: "Sweet Corn (Boiled)", category: "Grains & Cereals",
+    standardServingGrams: 165, servingUnit: "1 cup kernels (165g)",
+    per100g: { calories: 96, protein: 3.4, carbs: 21.0, fat: 1.5, fiber: 2.4, sugar: 4.5, sodium: 1 },
+    micronutrients: { iron_mg: 0.5, calcium_mg: 3, potassium_mg: 218 },
+    tags: ["grain", "corn", "sweet corn", "makai", "boiled", "vegan", "vegetarian"], approxCostPerKg: 90,
+    commonCookingVariations: ["Boiled", "Roasted", "Chaat"]
+  },
+  {
+    id: "yogurt_lowfat_plain", name: "Plain Low-Fat Yogurt",
+    category: "Dairy & Eggs", standardServingGrams: 170, servingUnit: "1 cup (170g)",
+    per100g: { calories: 63, protein: 5.3, carbs: 7.0, fat: 1.6, fiber: 0, sugar: 7.0, sodium: 70 },
+    micronutrients: { iron_mg: 0.1, calcium_mg: 183, potassium_mg: 234 },
+    tags: ["dairy", "yogurt", "curd", "dahi", "low-fat", "vegetarian", "calcium-rich"], approxCostPerKg: 100,
+    commonCookingVariations: ["Plain", "Raita", "Smoothie"]
+  },
+  {
+    id: "milk_skim", name: "Skim Milk",
+    category: "Dairy & Eggs", standardServingGrams: 244, servingUnit: "1 cup (244g)",
+    per100g: { calories: 34, protein: 3.4, carbs: 5.0, fat: 0.1, fiber: 0, sugar: 5.0, sodium: 42 },
+    micronutrients: { iron_mg: 0.0, calcium_mg: 122, potassium_mg: 150 },
+    tags: ["dairy", "milk", "skim", "low-fat", "vegetarian", "calcium-rich"], approxCostPerKg: 70,
+    commonCookingVariations: ["Chilled", "Heated", "Tea or coffee"]
+  },
+  {
+    id: "cheddar_cheese", name: "Cheddar Cheese",
+    category: "Dairy & Eggs", standardServingGrams: 28, servingUnit: "1 slice (28g)",
+    per100g: { calories: 403, protein: 24.9, carbs: 1.3, fat: 33.1, fiber: 0, sugar: 0.5, sodium: 621 },
+    micronutrients: { iron_mg: 0.7, calcium_mg: 721, potassium_mg: 98 },
+    tags: ["dairy", "cheese", "cheddar", "vegetarian", "high-protein", "high-calcium"], approxCostPerKg: 900,
+    commonCookingVariations: ["Sliced", "Grated", "Melted"]
+  },
+  {
+    id: "turkey_breast_roasted", name: "Turkey Breast (Roasted, Skinless)",
+    category: "Poultry & Meat", standardServingGrams: 85, servingUnit: "1 serving (85g)",
+    per100g: { calories: 135, protein: 29.0, carbs: 0, fat: 1.6, fiber: 0, sugar: 0, sodium: 55 },
+    micronutrients: { iron_mg: 1.1, calcium_mg: 14, potassium_mg: 239 },
+    tags: ["meat", "turkey", "poultry", "roasted", "high-protein", "non-veg"], approxCostPerKg: 900,
+    commonCookingVariations: ["Roasted", "Grilled", "Sliced"]
+  },
+  {
+    id: "tuna_canned_water", name: "Tuna (Canned in Water, Drained)",
+    category: "Fish & Seafood", standardServingGrams: 113, servingUnit: "1 can drained (113g)",
+    per100g: { calories: 116, protein: 25.5, carbs: 0, fat: 0.8, fiber: 0, sugar: 0, sodium: 338 },
+    micronutrients: { iron_mg: 1.3, calcium_mg: 11, potassium_mg: 237 },
+    tags: ["fish", "seafood", "tuna", "canned", "high-protein", "non-veg"], approxCostPerKg: 800,
+    commonCookingVariations: ["Drained", "Salad", "Sandwich"]
+  },
+  {
+    id: "shrimp_cooked", name: "Shrimp (Cooked)",
+    category: "Fish & Seafood", standardServingGrams: 85, servingUnit: "1 serving (85g)",
+    per100g: { calories: 99, protein: 24.0, carbs: 0.2, fat: 0.3, fiber: 0, sugar: 0, sodium: 111 },
+    micronutrients: { iron_mg: 0.5, calcium_mg: 70, potassium_mg: 259 },
+    tags: ["fish", "seafood", "shrimp", "prawn", "cooked", "high-protein", "non-veg"], approxCostPerKg: 700,
+    commonCookingVariations: ["Boiled", "Grilled", "Stir-fried"]
+  },
+  {
+    id: "beef_lean_cooked", name: "Lean Beef (Cooked, Grilled)",
+    category: "Poultry & Meat", standardServingGrams: 85, servingUnit: "1 serving (85g)",
+    per100g: { calories: 217, protein: 26.1, carbs: 0, fat: 11.8, fiber: 0, sugar: 0, sodium: 70 },
+    micronutrients: { iron_mg: 2.6, calcium_mg: 18, potassium_mg: 300 },
+    tags: ["meat", "beef", "lean", "grilled", "high-protein", "non-veg"], approxCostPerKg: 700,
+    commonCookingVariations: ["Grilled", "Roasted", "Stir-fried"]
+  },
+  {
+    id: "almonds_raw", name: "Almonds (Raw)", category: "Nuts & Seeds",
+    standardServingGrams: 28, servingUnit: "1 small handful (28g)",
+    per100g: { calories: 579, protein: 21.2, carbs: 21.6, fat: 49.9, fiber: 12.5, sugar: 4.4, sodium: 1 },
+    micronutrients: { iron_mg: 3.7, calcium_mg: 269, potassium_mg: 733 },
+    tags: ["nuts", "almond", "badam", "raw", "vegan", "vegetarian", "high-fiber"], approxCostPerKg: 1000,
+    commonCookingVariations: ["Raw", "Roasted", "Sliced"]
+  },
+  {
+    id: "peanuts_roasted", name: "Peanuts (Dry-Roasted, Unsalted)", category: "Nuts & Seeds",
+    standardServingGrams: 28, servingUnit: "1 small handful (28g)",
+    per100g: { calories: 587, protein: 24.4, carbs: 21.3, fat: 49.7, fiber: 8.4, sugar: 4.9, sodium: 6 },
+    micronutrients: { iron_mg: 2.3, calcium_mg: 58, potassium_mg: 634 },
+    tags: ["nuts", "peanut", "groundnut", "moongphali", "roasted", "vegan", "vegetarian", "high-protein"], approxCostPerKg: 180,
+    commonCookingVariations: ["Dry roasted", "Boiled", "Unsalted"]
+  },
+  {
+    id: "peanut_butter_smooth", name: "Peanut Butter (Smooth)", category: "Nuts & Seeds",
+    standardServingGrams: 32, servingUnit: "2 tablespoons (32g)",
+    per100g: { calories: 588, protein: 25.1, carbs: 20.0, fat: 50.4, fiber: 6.0, sugar: 9.2, sodium: 459 },
+    micronutrients: { iron_mg: 1.9, calcium_mg: 43, potassium_mg: 649 },
+    tags: ["nuts", "peanut butter", "spread", "high-protein", "vegetarian"], approxCostPerKg: 450,
+    commonCookingVariations: ["Smooth", "Crunchy"]
+  },
+  {
+    id: "olive_oil", name: "Olive Oil",
+    category: "Pantry & Spices", standardServingGrams: 14, servingUnit: "1 tablespoon (14g)",
+    per100g: { calories: 884, protein: 0, carbs: 0, fat: 100, fiber: 0, sugar: 0, sodium: 2 },
+    micronutrients: { iron_mg: 0.6, calcium_mg: 1, potassium_mg: 1 },
+    tags: ["oil", "olive oil", "fat", "cooking", "vegan", "vegetarian"], approxCostPerKg: 900,
+    commonCookingVariations: ["Raw dressing", "Sautéing"]
+  },
+
   // Snacks & Comparison Candidates
   {
     id: "potato_chips_fried",
