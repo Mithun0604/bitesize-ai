@@ -434,6 +434,19 @@ const foodDatabase = [
     commonCookingVariations: ["Dry roasted", "Light gravy"]
   },
   {
+    id: "guava_raw",
+    name: "Guava (Raw)",
+    category: "Fresh Produce",
+    standardServingGrams: 100,
+    servingUnit: "1 small guava (100g)",
+    // USDA SR Legacy 09139, Guavas, common, raw; values per 100g edible portion.
+    per100g: { calories: 68, protein: 2.55, carbs: 14.32, fat: 0.95, fiber: 5.4, sugar: 8.92, sodium: 2 },
+    micronutrients: { iron_mg: 0.26, calcium_mg: 18, potassium_mg: 417 },
+    tags: ["fruit", "raw", "guava", "amrood", "peru", "vegetarian", "vegan", "high-fiber"],
+    approxCostPerKg: 120,
+    commonCookingVariations: ["Raw", "Sliced", "Fruit salad"]
+  },
+  {
     id: "mixed_vegetable_salad",
     name: "Indian Green Salad (Cucumber, Tomato, Carrot, Onion)",
     category: "Fresh Produce",

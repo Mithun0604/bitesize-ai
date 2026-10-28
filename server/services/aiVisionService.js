@@ -8,7 +8,8 @@ const MINIMUM_CONFIDENCE = 0.35;
 // Only map labels when they describe the same food represented in our nutrition catalog.
 const FOOD_LABELS = {
   samosa: 'samosa_potato',
-  chicken_curry: 'chicken_curry_homestyle'
+  chicken_curry: 'chicken_curry_homestyle',
+  guava: 'guava_raw'
 };
 
 let classifierPromise;
