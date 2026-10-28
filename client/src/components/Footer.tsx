@@ -8,7 +8,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => (
   <footer className="home-footer">
     <div className="mx-auto grid max-w-6xl gap-8 px-5 py-9 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr] lg:px-12">
       <div>
-        <button className="home-footer-brand" onClick={() => onNavigate('landing')}>BiteSize</button>
+        <button type="button" className="home-footer-brand" onClick={() => onNavigate('landing')}>
+          <img src="/bitesize-mark.svg" alt="" aria-hidden="true" className="h-10 w-11 bg-[#FBF7EF] p-1 object-contain" />
+          <span>BiteSize</span>
+        </button>
         <p className="mt-2 max-w-sm text-sm">Your groceries, understood. Make everyday food choices feel simpler.</p>
       </div>
       <div>

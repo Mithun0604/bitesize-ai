@@ -305,6 +305,9 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   font-weight: 600;
 }
 .home-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
   color: #1f2924;
   font-family: var(--font-serif);
   font-size: 1.8rem;

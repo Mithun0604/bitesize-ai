@@ -97,7 +97,7 @@ export const FamilyPage: React.FC<FamilyProps> = ({ onNavigate }) => {
             onClick={() => onNavigate('subscriptions')}
             className="shrink-0 px-5 py-2.5 rounded-xl text-xs font-bold bg-white text-[#5B6B7A] hover:bg-[#FAF8F4] shadow transition-transform hover:scale-105"
           >
-            Upgrade to Shared Bite (₹399/mo)
+            Upgrade to Shared Bite (₹569/mo)
           </button>
         </div>
       )}

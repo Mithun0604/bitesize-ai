@@ -67,10 +67,10 @@ export const TermsOfServicePage: React.FC<TermsOfServiceProps> = ({ onNavigate }
             4. Subscriptions, Payments & Cancellations
           </h2>
           <ul className="list-disc list-inside space-y-1">
-            <li><strong>Subscription Plans:</strong> Small Bite (Free), Big Bite (₹199/month or ₹1,999/year), Shared Bite (₹399/month or ₹3,999/year).</li>
+            <li><strong>Subscription Plans:</strong> Small Bite (Free), Big Bite (₹249/month), and Shared Bite (₹569/month).</li>
             <li><strong>Auto-Renewal:</strong> Paid subscriptions renew automatically at the end of each billing cycle unless cancelled prior to renewal.</li>
             <li><strong>Cancellation:</strong> You may cancel your subscription at any time with 1 click in your profile settings. You will retain full access until the end of your prepaid period.</li>
-            <li><strong>Refund Policy:</strong> We offer a 14-day money-back guarantee on all annual subscription purchases.</li>
+            <li><strong>Refund Policy:</strong> Applicable refund terms are shown with the offer at purchase.</li>
           </ul>
         </section>
 

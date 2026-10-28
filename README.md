@@ -43,8 +43,8 @@ BiteSize connects meal photo suggestions, receipt scanning, nutrition tracking, 
 
 ### 6. Subscription System (Razorpay Integration)
 - **Small Bite (Free)**: 3 receipt scans/mo, 10 meal scans/mo, 1 profile, baseline tracking.
-- **Big Bite (₹199/month default)**: Higher receipt & meal scan limits, AI Coach, What-If comparisons, meal planning, and Bite Currency tracking.
-- **Shared Bite (₹399/month default)**: Big Bite features plus up to 5 household member records and shared budget/pantry tools. Member records do not yet have separate sign-ins or role-based access.
+- **Big Bite (₹249/month default)**: Higher receipt & meal scan limits, AI Coach, What-If comparisons, meal planning, and Bite Currency tracking.
+- **Shared Bite (₹569/month default)**: Big Bite features plus up to 5 household member records and shared budget/pantry tools. Member records do not yet have separate sign-ins or role-based access.
 - **Verified Payment Handling**: Server-side plan limit enforcement, signature verification, and sandbox test mode.
 
 ### 7. Bite Currency Rewards & First Club Partner Program
@@ -136,8 +136,8 @@ GEMINI_MODEL=gemini-3.8-flash
 RAZORPAY_KEY_ID=
 RAZORPAY_KEY_SECRET=
 ENABLE_SANDBOX_PAYMENTS=false
-BIG_BITE_PRICE_INR=199
-SHARED_BITE_PRICE_INR=399
+BIG_BITE_PRICE_INR=249
+SHARED_BITE_PRICE_INR=569
 
 # Local SQLite is used by the current runtime; these MySQL values are not yet consumed.
 MYSQL_HOST=localhost

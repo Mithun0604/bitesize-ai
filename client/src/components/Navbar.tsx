@@ -73,16 +73,12 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
         <div className="flex items-center justify-between h-16">
           
           {/* Brand Logo & Tagline */}
-          <div
-            className="flex items-center space-x-3 cursor-pointer group"
+          <button
+            type="button"
+            className="flex items-center space-x-3 text-left group"
             onClick={() => handleNavClick(user ? 'dashboard' : 'landing')}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#B85B3E] to-[#D88A70] flex items-center justify-center shadow-md shadow-[#B85B3E]/20 group-hover:scale-105 transition-transform">
-              <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2C6.5 2 2 6.5 2 12c0 4.5 3 8.5 7.5 9.7.5.1 1-.2 1-.7v-3c0-.6.4-1 1-1h1c.6 0 1 .4 1 1v3c0 .5.5.8 1 .7 4.5-1.2 7.5-5.2 7.5-9.7 0-5.5-4.5-10-10-10z" />
-                <path d="M12 7v5l3 3" />
-              </svg>
-            </div>
+            <img src="/bitesize-mark.svg" alt="" aria-hidden="true" className="h-10 w-11 bg-[#FBF7EF] p-1 object-contain transition-transform group-hover:scale-105" />
             <div>
               <div className="flex items-center space-x-1.5">
                 <span className="font-serif text-2xl font-bold tracking-tight text-[#2E2E2E] dark:text-white">BiteSize</span>
@@ -92,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
                 Your groceries, understood.
               </p>
             </div>
-          </div>
+          </button>
 
           {/* Desktop Navigation for Logged-In Users */}
           {user ? (

@@ -45,7 +45,7 @@ const seedDemoUser = async () => {
     await run(
       `INSERT INTO subscriptions (user_id, plan_id, status, billing_period, price_inr, next_billing_date)
        VALUES (?, ?, ?, ?, ?, ?)`,
-      [userId, 'big_bite', 'active', 'monthly', 199, '2026-11-15']
+      [userId, 'big_bite', 'active', 'monthly', 249, '2026-11-15']
     );
 
     // Monthly Budget for current month

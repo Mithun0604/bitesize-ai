@@ -42,7 +42,7 @@ const PLAN_CONFIG = {
   big_bite: {
     id: 'big_bite',
     name: 'Big Bite',
-    price: configuredPrice('BIG_BITE_PRICE_INR', 199),
+    price: configuredPrice('BIG_BITE_PRICE_INR', 249),
     interval: 'monthly',
     receiptScanLimit: 999999, // Unlimited fair-use
     mealScanLimit: 999999,
@@ -54,7 +54,7 @@ const PLAN_CONFIG = {
   shared_bite: {
     id: 'shared_bite',
     name: 'Shared Bite (Family)',
-    price: configuredPrice('SHARED_BITE_PRICE_INR', 399),
+    price: configuredPrice('SHARED_BITE_PRICE_INR', 569),
     interval: 'monthly',
     receiptScanLimit: 999999,
     mealScanLimit: 999999,
